@@ -4,6 +4,7 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
 }
+
 #background {
   width: 100%;
   height: 100vh;
@@ -11,6 +12,7 @@ body {
   background-size: cover;
   background-position: center;
 }
+
 .box {
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
@@ -22,34 +24,40 @@ body {
   transform: translate(-50%, -50%);
   border-radius: 10px;
 }
+
 .container {
-  max-width: 500px;
+  max-width: 500px; /* Adjust the width as needed */
   margin: 0 auto;
 }
+
 h1 {
   margin-bottom: 20px;
-  font-weight: bolder;
+  font-weight: bold;
   font-size: 50px;
 }
+
+
 p {
   padding-bottom: 10px;
   color: #fff;
   margin: 10px 0;
-  font-weight: bold;
   font-family: mohave;
   font-size: 20px;
 }
+
 form {
   padding-bottom: 5px;
   color: #fff;
   margin: 10px 0;
   text-align: left;
 }
+
 label {
   display: block;
   margin: 10px 0;
   font-weight: bold;
 }
+
 input {
   width: 80%;
   padding: 10px;
@@ -59,11 +67,13 @@ input {
   display: block;
   border-radius: 30px 0px 60px 25px;
 }
+
 .checkbox-label {
   display: flex;
   align-items: center;
-  margin: 10px 0; /* Adjust margin as needed */
+  margin: 5px 0; /* Adjust margin as needed */
 }
+
 .checkmark {
   width: 18px;
   height: 18px;
@@ -72,9 +82,11 @@ input {
   border-radius: 3px;
   margin-right: 10px;
 }
+
 input[type="checkbox"] {
   display: none;
 }
+
 input[type="checkbox"]:checked + .checkmark:after {
   content: "";
   display: block;
@@ -84,15 +96,18 @@ input[type="checkbox"]:checked + .checkmark:after {
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
+
 button#signup-button {
   background: linear-gradient(to right, #ff6a00, #ee0979);
   border: none;
   color: white;
   padding: 10px 20px;
-  margin: 20px 0;
+  margin: 20px auto; /* Center the button horizontally by using auto margins */
   border-radius: 5px;
   cursor: pointer;
+  display: block; /* Make the button a block-level element to center it */
 }
+
 button#signup-button:hover {
   background: linear-gradient(to left, #ff6a00, #ee0979);
 }
