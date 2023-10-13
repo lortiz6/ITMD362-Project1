@@ -36,6 +36,8 @@ p {
   color: #fff;
   margin: 10px 0;
   font-weight: bold;
+  font-family: mohave;
+  font-size: 20px;
 }
 form {
   padding-bottom: 5px;
