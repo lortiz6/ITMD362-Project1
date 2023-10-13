@@ -85,7 +85,7 @@ input {
   width: 15px;
   height: 15px;
   background-color: #fff;
-  border: 2px solid #ccc; /* Regular checkbox border */
+  border: 2px solid #ccc;
   border-radius: 3px;
   margin-right: 10px;
 }
