@@ -1,3 +1,6 @@
+/* Reset CSS (Meyer's Reset or Normalize) */
+/* Add your chosen reset CSS here */
+
 body {
   margin: 0;
   padding: 0;
@@ -36,7 +39,6 @@ h1 {
   font-size: 50px;
 }
 
-
 p {
   padding-bottom: 10px;
   color: #fff;
@@ -72,35 +74,43 @@ input {
   display: flex;
   align-items: center;
   margin: 5px 0; /* Adjust margin as needed */
+  position: relative;
 }
 
-.checkmark {
+.checkbox-label input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox-label .checkmark {
   width: 18px;
   height: 18px;
   background-color: #fff;
-  border: 2px solid #ee0979;
+  border: 2px solid #ccc; /* Regular checkbox border */
   border-radius: 3px;
   margin-right: 10px;
 }
 
-input[type="checkbox"] {
-  display: none;
+.checkbox-label input[type="checkbox"]:checked + .checkmark {
+  background-color: #00cc55; /* Color when the checkbox is checked */
+  border: 2px solid #00cc00; /* Border color when checked */
 }
 
-input[type="checkbox"]:checked + .checkmark:after {
-  content: "";
+.checkbox-label input[type="checkbox"]:checked + .checkmark:after {
+  content: '\2716'; /* Unicode checkmark character */
   display: block;
-  width: 4px;
-  height: 10px;
-  border: solid #ee0979;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
+  color: #fff; /* Color of the checkmark */
+  font-size: 18px;
+  text-align: center;
+  line-height: 18px;
+  position: absolute;
+  padding-left: 2px;
+  padding-top: 1px;
 }
 
 button#signup-button {
   background: linear-gradient(to right, #ff6a00, #ee0979);
   border: none;
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 10px 20px;
   margin: 20px auto; /* Center the button horizontally by using auto margins */
   border-radius: 5px;
