@@ -33,7 +33,7 @@ body {
 h1 {
   margin-bottom: 20px;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 32px;
 }
 
 p {
@@ -41,7 +41,7 @@ p {
   color: #fff;
   margin: 10px 0;
   font-family: mohave;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 form {
@@ -49,6 +49,7 @@ form {
   color: #fff;
   margin: 10px 0;
   text-align: left;
+  font-size: 13px;
 }
 
 label {
@@ -72,6 +73,8 @@ input {
   align-items: center;
   margin: 5px 0;
   position: relative;
+  padding-top: 5px;
+  font-size: 11px;
 }
 
 .checkbox-label input[type="checkbox"] {
@@ -79,10 +82,10 @@ input {
 }
 
 .checkbox-label .checkmark {
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
   background-color: #fff;
-  border: 2px solid #ccc;
+  border: 2px solid #ccc; /* Regular checkbox border */
   border-radius: 3px;
   margin-right: 10px;
 }
@@ -100,8 +103,6 @@ input {
   text-align: center;
   line-height: 18px;
   position: absolute;
-  padding-left: 2px;
-  padding-top: 1px;
 }
 
 button#signup-button {
@@ -109,7 +110,7 @@ button#signup-button {
   border: none;
   color: rgb(255, 255, 255);
   padding: 10px 20px;
-  margin: 20px auto; 
+  margin: 20px auto;
   border-radius: 5px;
   cursor: pointer;
   display: block;
@@ -117,4 +118,40 @@ button#signup-button {
 
 button#signup-button:hover {
   background: linear-gradient(to left, #ff6a00, #ee0979);
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 50px;
+  }
+  p {
+    padding-bottom: 10px;
+    color: #fff;
+    margin: 10px 0;
+    font-family: mohave;
+    font-size: 20px;
+  }
+  form {
+    padding-bottom: 5px;
+    color: #fff;
+    margin: 10px 0;
+    text-align: left;
+    font-size: 15px;
+  }
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    position: relative;
+    padding-top: 5px;
+    font-size: 15px;
+  }
+
+
 }
