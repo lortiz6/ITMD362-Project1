@@ -1,6 +1,3 @@
-/* Reset CSS (Meyer's Reset or Normalize) */
-/* Add your chosen reset CSS here */
-
 body {
   margin: 0;
   padding: 0;
@@ -29,7 +26,7 @@ body {
 }
 
 .container {
-  max-width: 500px; /* Adjust the width as needed */
+  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -73,7 +70,7 @@ input {
 .checkbox-label {
   display: flex;
   align-items: center;
-  margin: 5px 0; /* Adjust margin as needed */
+  margin: 5px 0;
   position: relative;
 }
 
@@ -85,20 +82,20 @@ input {
   width: 18px;
   height: 18px;
   background-color: #fff;
-  border: 2px solid #ccc; /* Regular checkbox border */
+  border: 2px solid #ccc;
   border-radius: 3px;
   margin-right: 10px;
 }
 
 .checkbox-label input[type="checkbox"]:checked + .checkmark {
-  background-color: #00cc55; /* Color when the checkbox is checked */
-  border: 2px solid #00cc00; /* Border color when checked */
+  background-color: #00cc55;
+  border: 2px solid #00cc00;
 }
 
 .checkbox-label input[type="checkbox"]:checked + .checkmark:after {
-  content: '\2716'; /* Unicode checkmark character */
+  content: '\2716';
   display: block;
-  color: #fff; /* Color of the checkmark */
+  color: #fff;
   font-size: 18px;
   text-align: center;
   line-height: 18px;
@@ -112,10 +109,10 @@ button#signup-button {
   border: none;
   color: rgb(255, 255, 255);
   padding: 10px 20px;
-  margin: 20px auto; /* Center the button horizontally by using auto margins */
+  margin: 20px auto; 
   border-radius: 5px;
   cursor: pointer;
-  display: block; /* Make the button a block-level element to center it */
+  display: block;
 }
 
 button#signup-button:hover {
